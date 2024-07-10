@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\",
+  "WorkspaceRootPath": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\views\\carrito\\agregarcarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\views\\carrito\\agregarcarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\views\\carrito\\agregarcarrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\proyecto\\proyecto_final\\proyecto_final\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|d:\\upn\\dise\u00F1o y arquitectura de software\\clon\\proyecto_final\\proyecto_final\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{598652E4-DEE2-44D9-8A56-BF1F47D6B9A7}|Proyecto_Final\\Proyecto_Final.csproj|solutionrelative:proyecto_final\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -56,24 +56,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Program.cs",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Program.cs",
               "RelativeDocumentMoniker": "Proyecto_Final\\Program.cs",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Program.cs",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Program.cs",
               "RelativeToolTip": "Proyecto_Final\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:37:36.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-10T06:37:36.91Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\appsettings.json",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\appsettings.json",
               "RelativeDocumentMoniker": "Proyecto_Final\\appsettings.json",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\appsettings.json",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\appsettings.json",
               "RelativeToolTip": "Proyecto_Final\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-10T06:37:33.956Z",
               "EditorCaption": ""
@@ -82,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "site.css",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Proyecto_Final\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\wwwroot\\css\\site.css",
               "RelativeToolTip": "Proyecto_Final\\wwwroot\\css\\site.css",
               "ViewState": "AQIAAB4AAAAAAAAAAAAUwCIAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -94,9 +93,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Producto\\Index.cshtml",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Producto\\Index.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final\\Views\\Producto\\Index.cshtml",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Producto\\Index.cshtml",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Producto\\Index.cshtml",
               "RelativeToolTip": "Proyecto_Final\\Views\\Producto\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -106,9 +105,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AgregarCarrito.cshtml",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
               "RelativeToolTip": "Proyecto_Final\\Views\\Carrito\\AgregarCarrito.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -118,9 +117,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Proyecto_Final\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAADYAAAAAAAAAAAAAAEQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -130,9 +129,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\UPN\\Dise\u00F1o y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "Proyecto_Final\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAACQAAAAAAAAAAAAwwD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

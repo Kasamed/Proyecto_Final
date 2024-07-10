@@ -8665,11 +8665,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\UPN\\Diseño y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Proyecto_Final.csproj",
+      "projectUniqueName": "D:\\UPN\\Diseño y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Proyecto_Final.csproj",
       "projectName": "Proyecto_Final",
-      "projectPath": "D:\\UPN\\Diseño y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\Proyecto_Final.csproj",
+      "projectPath": "D:\\UPN\\Diseño y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\Proyecto_Final.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\UPN\\Diseño y Arquitectura de Software\\Proyecto\\Proyecto_Final\\Proyecto_Final\\obj\\",
+      "outputPath": "D:\\UPN\\Diseño y Arquitectura de Software\\clon\\Proyecto_Final\\Proyecto_Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
