@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Proyecto_Final.Models.Producto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container pt-3">
+    <!-- H1 dentro del div -->
+
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1 class="text-primary"> Lista de Productos</h1>
+
+        </div>
+        <div class="col-6">
+            <a asp-controller="Producto" asp-action="Crear" class="btn btn-primary">Nuevo producto</a>
+        </div>
+
+    </div>
+
+    <br />
+
+    @if(Model.Count() > 0)
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th> Nombre </th>
+                        <th> Marca </th>
+                        <th> Precio </th>
+                        <th> Cantidad </th>
+                        <th> Imagen </th>
+                        <th>  </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th width="20%">@item.Nombre</th>
+                            <th width="10%">@item.Marca</th>
+                            <th width="10%">@item.Precio</th>
+                            <th width="10%">@item.Cantidad</th>
+                            <th width="35%" class="truncate">@item.Imagen</th>
+                            <th>
+                                <div class="w-75 btn-group" role="group">
+                                    <!-- btn-primary-custom -->
+                                    <a asp-controller="Producto" asp-action="Editar" asp-route-Id="@item.Id" class="btn btn-primary btn-primary-custom mx-2">Editar</a>
+                                    <a asp-controller="Producto" asp-action="Eliminar" asp-route-Id="@item.Id" class="btn btn-danger mx-2">Eliminar</a>
+                                </div>
+                            </th>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        
+    <p>No hay registros en la base de datos</p>
+    }
+
+</div>

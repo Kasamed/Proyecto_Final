@@ -1,0 +1,65 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <!-- text-white text-white d-flex flex-column align-items-center-->
+    <!-- imagen y span-->
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex flex-column align-items-center" asp-area="" asp-controller="Producto" asp-action="Index">
+                <img src="@Url.Content("~/img/producto.png")" alt="" width="25" height="25">
+            <span class="fw-bold">Producto</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <!-- d-flex flex-column align-items-center -->
+        <a id="manage" class="nav-link text-white d-flex flex-column align-items-center">
+            <!-- agrege imagen-->
+            <img src="@Url.Content("~/img/usuario.png")" alt="" width="20" height="25">
+            <span class="fw-bold">Hello @UserManager.GetUserName(User)</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <form id="logoutForm" class="form-inline d-flex flex-column align-items-center" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <!-- agrege btn-logout -->
+            <button id="logout" type="submit" class="nav-link btn-logout btn-link text-white border-0 d-flex flex-column align-items-center">
+                <!-- agrege imagen-->
+                <img src="@Url.Content("~/img/salir.png")" alt="" width="20" height="25">
+                <span class="fw-bold">Logout</span>
+            </button>
+        </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex flex-column align-items-center" asp-area="" asp-controller="Carrito" asp-action="AgregarCarrito">
+            <img src="@Url.Content("~/img/cart-compras.png")" alt="" width="25" height="25">
+            <span class="fw-bold">Mi carrito</span>
+        </a>
+    </li>
+
+    <!-- d-flex flex-column align-items-center -->
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex flex-column align-items-center" id="register" asp-area="Identity" asp-page="/Account/Register">
+            <!-- agrege imagen-->
+            <img src="@Url.Content("~/img/registrar.png")" alt="" width="25" height="25">
+            <span class="fw-bold">Register</span>
+        </a>
+    </li>
+
+    <!-- d-flex flex-column align-items-center -->
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex flex-column align-items-center" id="login" asp-area="Identity" asp-page="/Account/Login">
+            <!-- agrege imagen-->
+            <img src="@Url.Content("~/img/acceso.png")" alt="" width="25" height="25">
+            <span class="fw-bold">Login</span>
+        </a>
+    </li>
+}
+</ul>

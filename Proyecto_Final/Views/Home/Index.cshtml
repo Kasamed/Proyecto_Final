@@ -1,0 +1,137 @@
+﻿@model IEnumerable<Proyecto_Final.Models.Producto>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container pt-3">
+    <!-- H1 dentro del div -->
+    <h1 class="text-center">Catalogo de Componentes</h1>
+
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 mb-4">
+                        <div class="card border shadow p-1 mb-3 bg-white">
+                            <div class="card-img-container img-fluid">
+                                <img src="@item.Imagen" class="card-img-top" alt="@item.Nombre">
+                            </div>
+
+                            <div class="card-body">
+                                <h4 class="card-title text-center text-uppercase">@item.Marca</h4>
+                                <p class="card-text text-center">
+                                    @item.Nombre <br /><br />
+                                    <span class="text-primary">Precio Exclusivo de Web</span><br />
+                                    <span class="h5 text-green m-0">S/@item.Precio.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)</span>
+                                </p>
+
+                                <div class="d-flex justify-content-between align-items-center flex-column mb-3">
+                                    <div>
+                                        Cantidad:
+                                        <input type="number" min="1" max="10" step="1" value="1" class="cantidad" data-id="@item.Id">
+                                    </div>
+                                    <br />
+                                    <div>
+                                        <a href="#" data-id="@item.Id" class="btn btn-primary btn-block agregar my-0">Agregar al carrito</a>
+                                    </div>
+                                    <br />
+                                    <div>
+                                        <button class="btn btn-outline-success my-0 saber-mas"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#descripcionModal"
+                                                data-nombre="@item.Nombre">
+                                            Saber más
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>No hay registros en la base de datos</p>
+    }
+</div>
+<!-- Modal -->
+<div class="modal fade" id="descripcionModal" tabindex="-1" aria-labelledby="descripcionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="descripcionModalLabel">Descripción del Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="descripcionContenido">Cargando...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".agregar").on("click", function (event) {
+                event.preventDefault();
+
+                var id = $(this).data("id");
+                var cantidad = $(".cantidad[data-id='" + id + "']").val();
+
+                $.ajax({
+                    url: "@Url.Action("AgregarCarrito", "Carrito")",
+                    data: { id: id, cantidad: cantidad },
+                    type: "POST",
+                    error: function (err) {
+                        alert("Error al agregar al carrito: " + err.responseText);
+                    }
+                });
+            });
+
+            $(".saber-mas").on("click", function () {
+                var $button = $(this);
+                var nombre = $button.data("nombre");
+
+                // Crear un objeto FormData y agregar el nombre como campo
+                var formData = new FormData();
+                formData.append("nombre", nombre);
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("ObtenerDescripcion", "Home")',
+                    data: formData, // Usar FormData en lugar de JSON.stringify
+                    processData: false, // No procesar los datos
+                    contentType: false, // No configurar el tipo de contenido automáticamente
+                    success: function (data) {
+                        // Actualizar título del modal con el nombre del producto
+                        $("#descripcionModalLabel").text("Descripción de " + nombre);
+
+                        // Actualizar contenido del modal con la descripción obtenida
+                        $("#descripcionContenido").text(data.resumen ? data.resumen : 'No se encontró la descripción.');
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error en la solicitud AJAX:", xhr.status, xhr.statusText, error);
+                        $("#descripcionContenido").text('Ocurrió un error al intentar obtener la descripción: ' + xhr.statusText);
+                    }
+                });
+            });
+
+        });
+
+    </script>
+}
+
+
+
+
+

@@ -1,0 +1,87 @@
+﻿@model Proyecto_Final.Models.Producto
+@{
+    ViewData["Title"] = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Se elimino H1 -->
+
+<form method="post" asp-action="Eliminar">
+    <div class="border shadow p-3 mb-5 bg-white" style="border-radius: 15px;">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <h2 class="text-intro pl-3">¿Está seguro de Eliminar este producto?</h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Nombre" class="form-label">Nombre</label>
+                    <input asp-for="Nombre" disabled class="form-control" />
+                    
+                </div>
+
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Marca" class="form-label">Marca</label>
+                    <input asp-for="Marca" disabled class="form-control" />
+                  
+                </div>
+
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Precio" class="form-label">Precio</label>
+                    <input asp-for="Precio" disabled class="form-control" type="number" />
+
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Cantidad" class="form-label">Cantidad</label>
+                    <input asp-for="Cantidad" disabled class="form-control" />
+
+                </div>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label asp-for="Imagen" class="form-label">Imagen</label>
+                    <input asp-for="Imagen" disabled class="form-control" />
+
+                </div>
+            </div>
+
+            <br />
+
+            <div class="d-grid gap-2 d-md-block">
+
+                <button type="submit" class="btn btn-primary">Eliminar</button>
+                <!-- btn-primary-custom -->
+                <a asp-controller="Producto" asp-action="Index" class="btn btn-outline-success">Regresar</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+} 

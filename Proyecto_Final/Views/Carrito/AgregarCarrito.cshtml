@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Proyecto_Final.Models.CarritoItem>
+@{
+    ViewData["Title"] = "AgregarCarrito";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Carrito de compras</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            double total = 0;
+        }
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                total += item.Cantidad * item.Producto.Precio;
+                <tr>
+                    <td>@item.Producto.Id</td>
+                    <td>@item.Producto.Nombre</td>
+                    <td>@string.Format(new System.Globalization.CultureInfo("es-PE"), "S/{0:N2}", item.Producto.Precio)</td>
+                    <td>@item.Cantidad</td>
+                    <td>@string.Format(new System.Globalization.CultureInfo("es-PE"), "S/{0:N2}", item.Cantidad * item.Producto.Precio)</td>
+                    <td>
+                        <span class="btn btn-danger">
+                            @Html.ActionLink("Eliminar", "Delete", "Carrito", new { id = item.Producto.Id }, new { @class = "link-negro" })
+                        </span>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">Total</th>
+            <th>@string.Format(new System.Globalization.CultureInfo("es-PE"), "S/{0:N2}", total)</th>
+
+            <th></th>
+        </tr>
+    </tfoot>
+</table>
+
+@Html.ActionLink("Seguir Comprando", "Index", "Home", null, new { @class = "btn btn-outline-success" }) |
+<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#compradorModal">Finalizar Compra</a>
+
+<!-- Modal para datos del comprador -->
+<div class="modal fade" id="compradorModal" tabindex="-1" role="dialog" aria-labelledby="compradorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="compradorModalLabel">Datos del Comprador</h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form id="compradorForm" method="post" action="@Url.Action("FinalizarCompra", "Carrito")">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" name="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" class="form-control" id="Apellido" name="Apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Direccion">Dirección</label>
+                        <input type="text" class="form-control" id="Direccion" name="Direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono</label>
+                        <input type="text" class="form-control" id="Telefono" name="Telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Metodo de Pago</label><br>
+                        <input type="radio" name="Metodo_pago" value="Efectivo" checked> Efectivo<br>
+                        <input type="radio" name="Metodo_pago" value="Tarjeta"> Tarjeta<br>
+                    </div>
+                    <div class="form-group tarjeta-info" style="display:none;">
+                        <label for="NumeroTarjeta">Número de Tarjeta</label>
+                        <input type="text" class="form-control" id="NumeroTarjeta" name="NumeroTarjeta">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+

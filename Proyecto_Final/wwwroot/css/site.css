@@ -1,0 +1,143 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #126552;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+
+/*code para NAV BAR*/
+/*Nav bar de color negro*/
+.navbar-dark {
+    background-color: #000000 !important; /* negro */
+}
+
+
+
+
+/*code para Buttons*/
+.btn {
+    background-color: #126552 !important;
+    border-color: #126552 !important; /* Establece el color del borde */
+}
+
+.btn-logout {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.btn-danger {
+    background-color: #E3170A !important;
+    border: none !important;
+}
+
+.btn-outline-success {
+    background-color: transparent !important;
+    border-color: #126552 !important;
+    color: #126552 !important; /* Cambia el color del texto */
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+    background-color: #126552 !important;
+    color: #ffffff !important; /* Cambia el color del texto cuando está en hover/focus */
+    border-color: #126552 !important;
+}
+
+.btn-primary-custom {
+    background-color: #064789 !important;
+    border: none !important;
+}
+
+
+
+
+/*code para Input*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="search"],
+input[type="url"],
+input[type="checkbox"],
+input[type="radio"],
+textarea {
+    border: 1px solid #126552 !important;
+    /* Otros estilos que desees aplicar a todos los inputs */
+}
+
+
+
+/*code para text*/
+.text-primary {
+    color: #126552 !important;
+}
+
+.text-green {
+    color: #126552; /* Color verde oscuro (#126552) */
+    font-weight: bold; /* Agrega negrita al texto */
+}
+
+
+/*Longitud de texto para que apareza el "..."*/
+.truncate {
+    max-width: 150px; /* Ajusta esto al ancho máximo deseado */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+/*modicar tamaño de las imagenes*/
+.card-img-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 0 auto;
+    overflow: hidden; /* Para asegurar que la imagen no se desborde */
+}
+
+
+.card-img-top {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta para que la imagen se ajuste dentro del contenedor */
+}
+
+
+/*Links*/
+.link-negro {
+    color: white;
+    text-decoration: none;
+}
+
+.link-negro:hover {
+    color: white;
+    text-decoration: none;
+}
